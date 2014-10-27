@@ -9,7 +9,6 @@
     // your code here
     character = (Character*)[CCBReader load:@"Character"];
     [physicsNode addChild:character];
-    [self addObstacle];
 }
 
 -(void)update:(CCTime)delta
@@ -22,5 +21,6 @@
     // this will get called every time the player touches the screen
     [character flap];
 }
+[self addObstacle];
 
 @end
